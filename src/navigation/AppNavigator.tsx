@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../types/navigation';
 
+import { SplashScreen } from '../screens/SplashScreen';
 import { LoginSignupScreen } from '../screens/LoginSignupScreen';
 import { CreateProfileScreen } from '../screens/CreateProfileScreen';
 import { HomeScreen } from '../screens/HomeScreen';
@@ -18,12 +19,13 @@ export const AppNavigator: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="LoginSignup"
+        initialRouteName="Splash"
         screenOptions={{
           headerShown: false,
-          animation: 'slide_from_right',
+          animation: 'fade',
         }}
       >
+        <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="LoginSignup" component={LoginSignupScreen} />
         <Stack.Screen name="CreateProfile" component={CreateProfileScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />

@@ -1,26 +1,33 @@
 {
   "expo": {
-    "name": "l2l-app",
+    "name": "L2L",
     "slug": "l2l-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/logo.png",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF8F5"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./src/assets/complete-logo-without-bg.png",
+        "backgroundColor": "#FAF8F5"
       },
-      "predictiveBackGestureEnabled": false,
-      "package": "com.chouhan705.l2lapp"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.l2l.legaltolegible",
+      "statusBar": {
+        "translucent": true,
+        "backgroundColor": "transparent",
+        "barStyle": "dark-content"
+      }
     },
     "extra": {
       "eas": {
